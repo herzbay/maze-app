@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/gold">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAZE JOURNEY"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/appDescription1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terjebak di dalam labirin yang terbagi menjadi beberapa level dan mengharuskan para petualang untuk mencari jalan keluar agar berhasil lolos."
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center"
+                    android:padding="4dp"/>
+
+                <TextView
+                    android:id="@+id/appDescription2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Setiap level memiliki kesulitan yang meningkat. Dengan waktu yang berjalan mundur dan terbatas, para petualang harus menyelesaikan labirin sebelum waktu habis agar tidak mati dan memperoleh skor yang tinggi."
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center"
+                    android:padding="4dp"/>
+
+                <TextView
+                    android:id="@+id/appDescription3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Petualangan Menantimu di Maze Journey! Mulailah perjalananmu sekarang!"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="36dp"
+                    android:textAlignment="center"
+                    android:padding="4dp"/>
+
+                <TextView
+                    android:id="@+id/appVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Versi 2.0"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/appUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diupdate pada 12 Januari 2025"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:id="@+id/appDeveloper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEVELOPER"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="16dp"/>
+
+                <ImageView
+                    android:id="@+id/developerPhoto"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/fotodiri"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dibuat oleh Bayu Herlambang"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seorang mahasiswa di STIKI, Indonesia"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan NRP 221-111-013"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KEMBALI"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

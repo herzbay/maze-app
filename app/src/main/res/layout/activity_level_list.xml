@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- CardView for imageIcon and greetingTextView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/gold"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/imageIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/greetingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for levelListView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            card_view:cardCornerRadius="12dp"
+            android:background="@color/gold"
+            card_view:cardElevation="10dp">
+
+            <ListView
+                android:id="@+id/levelListView"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:divider="@android:color/black"
+                android:dividerHeight="1dp"
+                android:padding="16dp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
